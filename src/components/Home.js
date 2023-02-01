@@ -34,7 +34,7 @@ const Home = () => {
                         <p className='fw-bold'>CITY</p>
                         <p>{element.address.city}</p>
                     </div>
-                    <div className='col text-end'>
+                    <div className='col text-end button'>
                         <button className="btn btn-danger me-5" type="button"  data-bs-toggle="collapse" data-bs-target={"#collapseExample"+element.id} aria-expanded="false" aria-controls={"collapseExample"+element.id}>View Details
                         </button>
                     </div>
