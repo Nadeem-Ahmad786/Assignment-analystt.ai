@@ -24,18 +24,20 @@ const Home = () => {
         { data && <>{currentPosts.map((element)=>{
             return (
             <div className='rounded p-2 mb-2 bg-light'>
-                <div className='d-flex justify-content-between align-items-center'>
-                    <p>Hello {element.username}</p>
-                    <div>
+                <div className='row align-items-center'>
+                    <p className='col'>Hello {element.username}</p>
+                    <div className='col'>
                         <p className='fw-bold'>CONTACT</p>
                         <p>{element.name}</p>
                     </div>
-                    <div>
+                    <div className='col'>
                         <p className='fw-bold'>CITY</p>
                         <p>{element.address.city}</p>
                     </div>
-                    <button className="btn btn-danger" type="button"  data-bs-toggle="collapse" data-bs-target={"#collapseExample"+element.id} aria-expanded="false" aria-controls={"collapseExample"+element.id}>View Details
-                    </button>
+                    <div className='col text-end'>
+                        <button className="btn btn-danger me-5" type="button"  data-bs-toggle="collapse" data-bs-target={"#collapseExample"+element.id} aria-expanded="false" aria-controls={"collapseExample"+element.id}>View Details
+                        </button>
+                    </div>
                 </div>
                 <div className="collapse" id={"collapseExample"+element.id}>
                     <div className="card card-body">
