@@ -20,7 +20,7 @@ const Home = () => {
     }
     const currentPosts = data.slice(firstPostIndex, lastPostIndex);
   return (
-    <div className='bg-secondary vh-100 p-2 px-4'>
+    <div className='bg-secondary min-vh-100 p-2 px-4'>
         { data && <>{currentPosts.map((element)=>{
             return (
             <div className='rounded p-2 mb-2 bg-light'>
